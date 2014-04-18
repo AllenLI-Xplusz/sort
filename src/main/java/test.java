@@ -1,4 +1,3 @@
-
 public class test {
 
 	/**
@@ -6,19 +5,20 @@ public class test {
 	 */
 	public void buublesort(int a[])
 	{
-		for(int i=0;i<a.length;i++)
-		{
-			for(int j=0;j<a.length-i-1;j++)
-			{
-				if(a[j]>a[j++])
-				{
-					int tep=a[j];
-					 a[j]=a[j++];
-					 a[j++]=tep;
-				}
-			}
-		}
-	}
+            int temp  = 0;
+
+             for (int i = 0; i < a.length - 1; ++ i) {
+                for (int j = i; j < a.length; ++j) {
+
+                    if (a[i] < a[j]) {
+                    temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+            }
+        }
+    }
+
+    }
 	public void initarry(int a[])
 	{
 		for (int i = 0; i < a.length; i++) {
